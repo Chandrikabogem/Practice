@@ -1,0 +1,26 @@
+@mixin style($color,$font-size,$display,$flex-direction,$justify-content) {
+    
+    color: $color;
+    font-size: $font-size;
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content
+}
+
+
+
+.demo{
+    @include style( orange,20px,flex,row,space-between);
+}
+.demo1{
+    @include style( orange,20px,null,null,null);
+}
+.demo2{
+    @include style(pink,20px,null,null,null )
+}
+.demo3{
+    @include style(blue,20px,null,null,null)
+}
+
+
+

@@ -1,0 +1,157 @@
+.main{
+    padding: 15px;
+    margin: 15px;
+  
+}
+
+
+@mixin style2($display,$flex-direction,$justify-content,$background-image){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    background-image: $background-image;
+   
+}
+ .maincontainer {
+   @include style2(flex,row,space-between,null)
+
+
+}
+
+.headercontainer{
+    @include style2(flex,row,space-between,null)
+}
+.footercontainer{
+    @include style2(flex,row,null,linear-gradient(to bottom right, blue, lightblue))
+   
+
+}
+@mixin style( $border-bottom-right-radius,$border-top-left-radius){
+    background-image: linear-gradient(to bottom right, blue, lightblue);
+    padding: 15px;
+    color: white;
+    border-bottom-right-radius: $border-bottom-right-radius;
+    border-top-left-radius: $border-top-left-radius;
+}
+.invoiceleftbutton{
+    @include style (40px,null)
+}
+.invoicerightbutton {
+    @include style (null,40px)
+}
+
+.invoiceright {
+  
+    text-align: justify;
+
+    -moz-text-align-last: right;
+
+    text-align-last: right;
+
+}
+table,
+tr,
+td,
+th {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+
+    font-size: 18px;
+    font-family: "Roboto";
+
+
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+.tdhead {
+    text-align: right;
+}
+.footerheading {
+
+    font-family: "Roboto";
+    color: white;
+    
+}
+.invoiceleft {
+    text-align: left;
+}
+
+/*
+.main {
+    padding: 15px;
+
+    margin: 15px;
+}
+
+.invoiceleft {
+    left: 0px;
+
+}
+
+.invoiceleftbutton {
+    border-bottom-right-radius: 40px;
+    background-image: linear-gradient(to bottom right, blue, lightblue);
+    padding: 30px;
+    color: white;
+  
+}
+
+h4 {
+
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Roboto";
+    font-style: normal;
+}
+
+.invoiceright {
+    right: 10px;
+    text-align: justify;
+
+    -moz-text-align-last: right;
+
+    text-align-last: right;
+
+}
+
+.invoicerightbutton {
+    border-top-left-radius: 40px;
+    background-image: linear-gradient(to bottom right, blue, lightblue);
+    padding: 30px;
+    color: white;
+
+}
+
+
+.headercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+   
+}
+
+.footercontainer {
+    display: flex;
+    flex-direction: row;
+  
+    background-image: linear-gradient(to bottom right, blue, lightblue);
+}
+
+.footerheading {
+
+    font-family: "Roboto";
+    color: white;
+}
+
+.tdhead {
+    text-align: right;
+} */
+

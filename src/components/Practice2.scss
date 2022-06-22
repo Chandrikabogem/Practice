@@ -1,0 +1,57 @@
+.first > {
+    h1{
+        color: red;
+    }
+    
+    & .second input{
+        background-color: blue;
+    
+    }
+   
+
+
+ & .third h1{
+    //color: green;
+    &:after {
+        content: "";
+        color:palegreen;
+        padding: 10px;
+        font-size: large;
+    }
+
+    &:before{
+        content: "";
+        font-size: 50px;
+    }
+}
+ 
+
+}
+
+h4 {
+   // color: beige;
+     &::after {
+       // content: "hii";
+        color:cyan;
+    } 
+   
+}
+h2{
+    font-size: 40px;
+    &::after{
+        color: blanchedalmond;
+        font-size: 40px;
+    }
+}
+
+
+
+@mixin style($display,$flex-direction,$justify-content) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
+.first{
+    @include style (flex,row,center)
+}
