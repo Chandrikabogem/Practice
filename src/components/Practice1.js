@@ -5,7 +5,7 @@ const Practice1 = () => {
   return (
     <div className="demo">
         <div className='demo1'>
-            <h1>Payment options</h1>
+            <h1>Payment options................................................................................................</h1>
 <p>You can choose anything you want like</p>
 <p>Phonepay</p>
 <p>Google Pay</p>
